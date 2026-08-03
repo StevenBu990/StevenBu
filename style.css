@@ -23,3 +23,27 @@ section {
     margin: 0 auto;
     padding: 60px 20px;
 }
+
+.nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg);
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+    z-index: 10;
+}
+
+.nav nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.nav a {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.nav a:hover {
+    color: var(--accent);
+}
