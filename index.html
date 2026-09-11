@@ -1,7 +1,10 @@
 <html>
     <head>
-        <link rel = "stylesheet" href = "style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <meta property="og:title" content="Steven Bu">
+        <meta property="og:description" content="CS student building software, ML, and robotics projects.">
     </head>
 
     <body>
@@ -17,67 +20,75 @@
         </header>
 
         <main>
-            <section id = "hero">
-                <h1>Steven Bu</h1>
-                <p>Hi, I'm Steven - a third year at UC Davis majoring in Computer Science, from Colorado.
-                CS student currently exploring opportunities in building software and exploring data.
+            <section id="hero">
+                <h1>Hi, I'm Steven 👋</h1>
+                <p>Third-year CS student at UC Davis, originally from Colorado. I build software 
+                and mess around with ML, robotics, and data — currently reconstructing broken 
+                3D objects with vision-language models at Colorado School of Mines.
                 </p>
-
-                <a href="https://github.com/StevenBu990">Github</a>
+                <a href="https://github.com/StevenBu990">GitHub</a>
             </section>
 
-            <section id = "about">
+            <section id="about" class="fade-in">
                 <h2>About</h2>
                 <p>As a Computer Science student at UC Davis, I study the theoretical and complex real-world applications of both software and hardware.
                     I am an aspiring software engineer with a strong interest in building scalable, efficient, and impactful applications.
                 </p>
             </section>
 
-            <section id = "education">
+            <section id="education" class="fade-in">
                 <h2>Education</h2>
                 <article>
                     <h3>University of California, Davis</h3>
-                    <p class = "date">Expected Graduation: Spring 2027</p>
+                    <p class="date">Expected Graduation: Spring 2027</p>
                     <p>Bachelor of Science in Computer Science - GPA: 3.88/4.00</p>
                     <p>Relevant Coursework: Algorithm Design & Analysis, Computer Architecture, Machine Learning, Probability and Statistical Modeling, Software Development & Object Oriented Programming in C++</p>
                     <p>Dean's List, College of Engineering (3x)</p>
                 </article>
             </section>
 
-            <section id = "experience">
-                <h2>Experience</h2>
+            <section id="experience" class="fade-in">
+                <h2>Currently / Recently</h2>
+
                 <article>
-                    <h3>Machine Learning Intern - Colorado School of Mines</h3>
-                    <p class = "date">December 2025 - Present</p>
-                    <p>At Colorado School of Mines, I'm building an automated research pipeline for reconstructing missing pieces of damaged 3D/CAD objects — think putting a shattered vase back together computationally, then measuring how close the reconstruction is to the real thing.
-                        I started by evaluating existing CAD reconstruction approaches like DeepCAD and InstantMesh alongside direct VLM inference, benchmarking their reconstruction quality, geometric accuracy, and inference performance.
-                        After that comparison, I moved to a VLM-based approach (using Gemini) as the core of the pipeline, and built out the full system end-to-end — automated 3D rendering, reconstruction, image alignment, and evaluation — scaling from a handful of manually-processed objects to 15 fully automated ones.
-                        Along the way, I identified and diagnosed several subtle evaluation failure modes and built diagnostic tools to catch them, and ran controlled experiments showing that guided visual markers and AI-driven view selection can meaningfully improve reconstruction accuracy.
+                    <h3><a href="https://github.com/StevenBu990/reconstruction-project">Machine Learning Intern</a> — Colorado School of Mines</h3>
+                    <p class="date">December 2025 – Present</p>
+                    <p>Building a pipeline that uses vision-language models to reconstruct missing 
+                    pieces of broken 3D/CAD objects — basically teaching AI to put a shattered vase 
+                    back together, then measuring how close it gets. I evaluated a few existing CAD 
+                    reconstruction approaches (DeepCAD, InstantMesh) before landing on a VLM-based 
+                    method, and built the full system — rendering, reconstruction, alignment, 
+                    evaluation — scaling it from a handful of manual objects to 15 fully automated ones. 
+                    Along the way I found and fixed some sneaky bugs in how we were measuring accuracy, 
+                    and ran experiments showing that guided visual markers meaningfully improve results.
                     </p>
                 </article>
 
                 <article>
-                    <h3>Computer Science Intern - TechFocus LLC</h3> 
-                    <p class = "date">July 2025 - January 2026</p>
-                    <p>As a Computer Science Intern at TechFocus LLC, I used LLM-assisted development workflows to rapidly prototype 20+ responsive web UI designs in HTML/CSS and JavaScript, letting me explore more design directions and iterate faster on peer feedback than manual coding alone would allow.
-                        I also authored 20+ technical design documents covering software architecture, APIs, data flow, and strategies for integrating AI-assisted tools into the development process — documentation that helped the team think through where and how these workflows fit into a larger project.
+                    <h3>Computer Science Intern — TechFocus LLC</h3>
+                    <p class="date">July 2025 – January 2026</p>
+                    <p>Used LLM-assisted workflows to quickly prototype 20+ responsive web UI designs, 
+                    iterating fast on peer feedback. Also wrote 20+ technical design docs covering 
+                    architecture, APIs, and how AI-assisted tools fit into the team's dev process.
                     </p>
                 </article>
 
                 <article>
-                    <h3>AI and Robotics Intern - Colorado School of Mines</h3>
-                    <p class = "date">June 2025 - September 2025</p>
-                    <p>As an AI and Robotics Intern at Colorado School of Mines, I built a robotic manipulation pipeline using NVIDIA Isaac GR00T, training, evaluating, and deploying manipulation policies directly on a physical SO-ARM100 robotic arm — successfully getting it to perform tasks like stacking objects.
-                        I also implemented computer vision components using OpenCV and ArUco marker detection for object localization and robot calibration, giving the arm the ability to perceive object positions in physical space before acting.
-
+                    <h3>AI and Robotics Intern — Colorado School of Mines</h3>
+                    <p class="date">June 2025 – September 2025</p>
+                    <p>Built a robotic manipulation pipeline with NVIDIA Isaac GR00T — trained and 
+                    deployed policies on a real SO-ARM100 arm, getting it to do things like stack 
+                    objects. Also built the computer vision side (OpenCV + ArUco markers) so the arm 
+                    could actually locate objects and calibrate itself.
                     </p>
                 </article>
             </section>
 
-            <section id = "projects">
+            <section id="projects" class="fade-in">
+                <h2>Projects</h2>
                 <article>
                     <h3>Machine Learning Pipeline for Steam Game Review Prediction - Team Lead</h3>
-                    <p class = "date">January 2026 - March 2026</p>
+                    <p class="date">January 2026 - March 2026</p>
                     <p>As a Team Lead in for my group in Machine Learning, we built an end-to-end machine learning pipeline in Python using pandas and scikit-learn to clean, preprocess, and engineer features from a dataset of 27,000+ Steam games.
                         We also trained and compared linear regression, polynomial regression, and gradient-boosted models using cross-validation and performance metrics to identify the highest-performing model.
                     </p>
@@ -85,14 +96,29 @@
                 </article>
             </section>
 
-            <section id = "skills">
+            <section id="skills" class="fade-in">
                 <h2>Skills</h2>
-                <p><strong>Languages: </strong>C++, C, Python</p>
-                <p><strong>Tools/Software: </strong>Git, Linux</p>
-                <p><strong>Frameworks/Tech: </strong>NVIDIA Isaac Sim, Isaac GR00T</p>
+                <div class="skill-group">
+                    <p class="skill-label">Languages</p>
+                    <div class="pills">
+                        <span class="pill">C++</span><span class="pill">C</span><span class="pill">Python</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-label">Tools</p>
+                    <div class="pills">
+                        <span class="pill">Git</span><span class="pill">Linux</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-label">Frameworks</p>
+                    <div class="pills">
+                        <span class="pill">NVIDIA Isaac Sim</span><span class="pill">Isaac GR00T</span>
+                    </div>
+                </div>
             </section>
 
-            <section id = "contact">
+            <section id="contact" class="fade-in">
                 <h2>Contact</h2>
                 <p><a href="mailto:busteven990@gmail.com">busteven990@gmail.com</a></p>
                 <p><a href="https://github.com/StevenBu990">Github</a></p>
@@ -100,5 +126,10 @@
             </section>
 
         </main>
+
+        <script src="script.js"></script>
+        <footer style="text-align: center; padding: 40px 20px; color: #888; font-size: 0.85rem;">
+            Built by Steven Bu — 2026
+        </footer>
     </body>
 </html>
