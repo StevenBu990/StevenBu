@@ -1,5 +1,4 @@
 :root {
-    --bg: #fafafa;
     --bg-alt: #f0f0f0;
     --text: #1a1a1a;
     --accent: #2563eb;
@@ -143,7 +142,6 @@ a:focus-visible {
     padding: 4px 14px;
     font-size: 0.85rem;
 }
-
 
 #contact p {
     display: inline-block;
